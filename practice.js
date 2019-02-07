@@ -32,6 +32,14 @@ function indexValue(string) {
     return array.splice(1).join()
 }
 
+// reverse the words in a string
+
+function reverseWordsInString(string) {
+    let split = string.split(" ");
+    let reverse = split.reverse();
+    let reversedString = reverse.join(" ");
+    return reversedString;
+}
 
 // recursion for reversing a string
 
