@@ -54,6 +54,16 @@ function reverse(str) {
     return reverse(str.substr(1)) + str[0];
 }
 
+// calculate fibonacci sequence based on numerical input
+
+function fib(num) {
+    let array = [0,1]
+    for (let i = 1; i < num; i++) {
+        array.push(array[i]+array[i-1])
+    }
+    return array
+}
+
 // function palindrome(string) {
 //     let array = string.split('');
 //     let i = 0;
