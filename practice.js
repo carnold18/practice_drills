@@ -54,15 +54,79 @@ function reverse(str) {
     return reverse(str.substr(1)) + str[0];
 }
 
+function reverseString(str) {
+    if (str === '') {
+        return '';
+    } else {
+        console.log(str.substr(1) + str[0])
+        return reverseString(str.substr(1)) + str[0];
+    }
+}
+
 // calculate fibonacci sequence based on numerical input
 
-function fib(num) {
+function fibIterative(num) {
+    let array = [0,1]
+    for (let i = 1; i < num; i++) {
+        array.push(array[i]+array[i-1])
+    }
+    return array[num]
+}
+
+function fibonacciIterative(num) {
     let array = [0,1]
     for (let i = 1; i < num; i++) {
         array.push(array[i]+array[i-1])
     }
     return array
 }
+
+function fibPop(num) {
+    let array = [0,1]
+    for (let i = 1; i < num; i++) {
+        array.push(array[i]+array[i-1])
+    }
+    return array.pop()
+}
+
+// given an index N find the value at that index in the fibonacci sequence
+// recursively at index N 
+// fibonacci sequence = 1,1,2,3,5,8,13,21.. 
+// indices = 1,2,3,4,5,6,7, 8 
+// example: 6, output 8
+
+function fib(x) {
+    if (x <= 0) return 0;
+    if (x === 1) return 1;
+    return fib(x-1)+fib(x-2);
+}
+
+
+// function fib(x) {
+//     let array = [0,1];
+//     if (x<=0) return;
+//     if(x===1) return array;
+//     // console.log("array:", array)
+//     // console.log("addition of two previous:", array[x-1]+array[x-2])
+//     array.push(array[x-1]+array[x-2]);
+//     // console.log("new array:", array)
+//     return array;
+// }
+
+
+// given a number N where 1 million > N > 0 whole numbers only 
+// output the number in words // ie: 384765 output three hundred eighty four thousand seven hundred sixty five
+
+
+
+
+
+
+
+
+
+
+
 
 // function palindrome(string) {
 //     let array = string.split('');
