@@ -117,14 +117,13 @@ function fib(x) {
 // given a number N where 1 million > N > 0 whole numbers only 
 // output the number in words // ie: 384765 output three hundred eighty four thousand seven hundred sixty five
 
-
-convert the number to a string
-then convert string to an array
-if array length = 6, then
-if array length = 5, then 
-compare each index in the array to a premade object with key:value pairs
-max number of indices is 5
-between indices 2 and 3, insert thousand
+// convert the number to a string
+// then convert string to an array
+// if array length = 6, then
+// if array length = 5, then 
+// compare each index in the array to a premade object with key:value pairs
+// max number of indices is 5
+// between indices 2 and 3, insert thousand
 
 
 // var singles = {
@@ -300,6 +299,14 @@ function printNumber(num) {
             if (array[3] == 0 && array[2] == 0 && array[1] == 0) {
                 console.log(singles[array[0]],'thousand')
             }
+        break;
+        case 5:
+        break;
+        case 6:
+        break;
+        case 7:
+            console.log(singles[array[0]],'million')
+        break;
     }
 }
 
