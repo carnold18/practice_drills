@@ -268,8 +268,8 @@ function printNumber(num) {
         case 2:
             if (number > 9 && number < 20) {
                 console.log(array[0],array[1])
-                let num = array[0]+array[1]
-                console.log(singles[num])
+                let teen = array[0]+array[1]
+                console.log(singles[teen])
             }
             if (number >= 20 && number < 100) {
                 console.log(array[0],array[1])
@@ -277,8 +277,29 @@ function printNumber(num) {
             }
         break;
         case 3:
-            console.log()
+            if (array[1] == 1 || array[1] == 0) {
+                if (array[1] == 0 && array[0] == 0) {
+                    console.log(singles[array[0],'hundred'])
+                }
+                if (array[1] == 0 && array[0] !== 0) {
+                    console.log(singles[array[0]],'hundred',singles[array[2]])
+                }
+                if (array[1] == 1) {
+                    let teen = array[1]+array[2]
+                    // console.log(teen)
+                    // console.log(singles[array[0]])
+                    // console.log(singles[teen])
+                    console.log(singles[array[0]],'hundred',singles[teen])
+                }
+            }
+            if (array[1] != 1 && array[1] != 0) {
+                console.log(singles[array[0]],'hundred',tens[array[1]],singles[array[2]])
+            }
         break;
+        case 4:
+            if (array[3] == 0 && array[2] == 0 && array[1] == 0) {
+                console.log(singles[array[0]],'thousand')
+            }
     }
 }
 
