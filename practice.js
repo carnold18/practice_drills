@@ -346,6 +346,9 @@ function addToArray(n,callback) {
 addToArray(7,createArray)
 
 
+// How would you sort the following array by numeric value and by alpa order?
+
+
 // Give me an exmaple of a closure
 
 
