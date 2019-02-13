@@ -25,6 +25,7 @@ function findMax(arr) {
 	}
 	return Math.max(...sumArray);
 }
+findMax(array);
 sumArray.length = 0;
 
 
