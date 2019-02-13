@@ -6,4 +6,3 @@
 
 
 // Execute a promise.
-
