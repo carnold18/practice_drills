@@ -102,125 +102,6 @@ function fib(x) {
 }
 
 
-// function fib(x) {
-//     let array = [0,1];
-//     if (x<=0) return;
-//     if(x===1) return array;
-//     // console.log("array:", array)
-//     // console.log("addition of two previous:", array[x-1]+array[x-2])
-//     array.push(array[x-1]+array[x-2]);
-//     // console.log("new array:", array)
-//     return array;
-// }
-
-
-// given a number N where 1 million > N > 0 whole numbers only 
-// output the number in words // ie: 384765 output three hundred eighty four thousand seven hundred sixty five
-
-// convert the number to a string
-// then convert string to an array
-// if array length = 6, then
-// if array length = 5, then 
-// compare each index in the array to a premade object with key:value pairs
-// max number of indices is 5
-// between indices 2 and 3, insert thousand
-
-
-// var singles = {
-//     '0': '',
-//     '1': 'one',
-//     '2': 'two',
-//     '3': 'three',
-//     '4': 'four',
-//     '5': 'five',
-//     '6': 'six',
-//     '7': 'seven',
-//     '8': 'eight',
-//     '9': 'nine',
-//     '10': 'ten',
-//     '11': 'eleven',
-//     '12': 'twelve',
-//     '13': 'thirteen',
-//     '14': 'fourteen',
-//     '15': 'fifteen',
-//     '16': 'sixteen',
-//     '17': 'seventeen',
-//     '18': 'eighteen',
-//     '19': 'nineteen',
-// }
-
-// var tens = {
-//     '2': 'twenty',
-//     '3': 'thirty',
-//     '4': 'forty',
-//     '5': 'fifty',
-//     '6': 'sixty',
-//     '7': 'seventy',
-//     '8': 'eighty',
-//     '9': 'ninety',
-// }
-
-
-// function printNumber(num) {
-//     let singles = {
-//         '0': '',
-//         '1': 'one',
-//         '2': 'two',
-//         '3': 'three',
-//         '4': 'four',
-//         '5': 'five',
-//         '6': 'six',
-//         '7': 'seven',
-//         '8': 'eight',
-//         '9': 'nine',
-//         '10': 'ten',
-//         '11': 'eleven',
-//         '12': 'twelve',
-//         '13': 'thirteen',
-//         '14': 'fourteen',
-//         '15': 'fifteen',
-//         '16': 'sixteen',
-//         '17': 'seventeen',
-//         '18': 'eighteen',
-//         '19': 'nineteen',
-//     }
-
-//     let tens = {
-//         '2': 'twenty',
-//         '3': 'thirty',
-//         '4': 'forty',
-//         '5': 'fifty',
-//         '6': 'sixty',
-//         '7': 'seventy',
-//         '8': 'eighty',
-//         '9': 'ninety',
-//     }
-
-//     console.log("singles:", singles)
-//     let number = num;
-//     console.log("num:", num)
-//     let string = number.toString();
-//     console.log("string:", string)
-//     let array = string.split('');
-//     console.log("array:", array)
-//     let length = string.length;
-//     console.log('length:', length)
-
-//     switch (length) {
-//         case 1:
-//             console.log(array[0])
-//             console.log(typeof array[0])
-//             console.log(singles[array[0]])
-//             // singles[array[0]]
-//         break;
-//         case 2:
-//             '2 digits'
-//         break;
-//     }
-// }
-
-
-
 function printNumber(num) {
     let singles = {
         '0': '',
@@ -352,6 +233,138 @@ addToArray(7,createArray)
 // Give me an exmaple of a closure
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function fib(x) {
+//     let array = [0,1];
+//     if (x<=0) return;
+//     if(x===1) return array;
+//     // console.log("array:", array)
+//     // console.log("addition of two previous:", array[x-1]+array[x-2])
+//     array.push(array[x-1]+array[x-2]);
+//     // console.log("new array:", array)
+//     return array;
+// }
+
+
+// given a number N where 1 million > N > 0 whole numbers only 
+// output the number in words // ie: 384765 output three hundred eighty four thousand seven hundred sixty five
+
+// convert the number to a string
+// then convert string to an array
+// if array length = 6, then
+// if array length = 5, then 
+// compare each index in the array to a premade object with key:value pairs
+// max number of indices is 5
+// between indices 2 and 3, insert thousand
+
+
+// var singles = {
+//     '0': '',
+//     '1': 'one',
+//     '2': 'two',
+//     '3': 'three',
+//     '4': 'four',
+//     '5': 'five',
+//     '6': 'six',
+//     '7': 'seven',
+//     '8': 'eight',
+//     '9': 'nine',
+//     '10': 'ten',
+//     '11': 'eleven',
+//     '12': 'twelve',
+//     '13': 'thirteen',
+//     '14': 'fourteen',
+//     '15': 'fifteen',
+//     '16': 'sixteen',
+//     '17': 'seventeen',
+//     '18': 'eighteen',
+//     '19': 'nineteen',
+// }
+
+// var tens = {
+//     '2': 'twenty',
+//     '3': 'thirty',
+//     '4': 'forty',
+//     '5': 'fifty',
+//     '6': 'sixty',
+//     '7': 'seventy',
+//     '8': 'eighty',
+//     '9': 'ninety',
+// }
+
+
+// function printNumber(num) {
+//     let singles = {
+//         '0': '',
+//         '1': 'one',
+//         '2': 'two',
+//         '3': 'three',
+//         '4': 'four',
+//         '5': 'five',
+//         '6': 'six',
+//         '7': 'seven',
+//         '8': 'eight',
+//         '9': 'nine',
+//         '10': 'ten',
+//         '11': 'eleven',
+//         '12': 'twelve',
+//         '13': 'thirteen',
+//         '14': 'fourteen',
+//         '15': 'fifteen',
+//         '16': 'sixteen',
+//         '17': 'seventeen',
+//         '18': 'eighteen',
+//         '19': 'nineteen',
+//     }
+
+//     let tens = {
+//         '2': 'twenty',
+//         '3': 'thirty',
+//         '4': 'forty',
+//         '5': 'fifty',
+//         '6': 'sixty',
+//         '7': 'seventy',
+//         '8': 'eighty',
+//         '9': 'ninety',
+//     }
+
+//     console.log("singles:", singles)
+//     let number = num;
+//     console.log("num:", num)
+//     let string = number.toString();
+//     console.log("string:", string)
+//     let array = string.split('');
+//     console.log("array:", array)
+//     let length = string.length;
+//     console.log('length:', length)
+
+//     switch (length) {
+//         case 1:
+//             console.log(array[0])
+//             console.log(typeof array[0])
+//             console.log(singles[array[0]])
+//             // singles[array[0]]
+//         break;
+//         case 2:
+//             '2 digits'
+//         break;
+//     }
+// }
 
 // function palindrome(string) {
 //     let array = string.split('');
